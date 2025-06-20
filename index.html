@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+</head>
+
+<body>
+    <font face="arial">
+        <h1> Módulo 1 - Primeiros Passos com HTML</h1>
+        <hr />
+
+        <h2 id="inicio">Índice</h2>
+        <ul>
+            <li><a href="#historia-computadores">História dos computadores</a></li>
+            <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+            <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+            <li><a href="#estrutura">Como é uma estrutura básica de um HTML?</a></li>
+            <li><a href="#listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+            <li><a href="#referencias">Links de referências</a></li>
+        </ul>
+
+        <h2 id="historia-computadores">História dos computadores </h2> <a href="#inicio"><small>(voltar)</small></a>
+
+        <h3>Evolução do computador</h3>
+
+        <p>Os computadores <strong>têm uma linha do tempo dividida por gerações</strong>. Cada uma delas é marcada por
+            características definidas por inovações ou meios de funcionamento em específico. Entretanto, a principal
+            característica que define uma geração de computadores é a capacidade e velocidade de processamento. Veja, a
+            seguir, as gerações e quais foram os seus modelos mais importantes:
+
+        <h3>Primeira geração (1939-1955)</h3>
+
+        <p>Os primeiros computadores modernos <strong>diferiam-se de suas pré-gerações por utilizarem tubos a vácuo que
+                substituíam os relés.</strong> Por meio desses tubos, as informações binárias processadas pelos
+            computadores
+            ocorriam de maneira mais dinâmica. <strong>Mediam metros de altura e comprimento, pesavam toneladas
+            </strong> e
+            tinham um custo que seria atualmente milionário. O Eniac, por exemplo, criado na década de 1940, media cerca
+            de
+            180 m<sup>2</sup> e pesava quase 30 toneladas.</p>
+
+        <h3>Segunda geração (1955-1964)</h3>
+
+        <p>Agora, <strong>o processamento de dados ocorria por meio de transistores </strong>, que controlavam o fluxo
+            da
+            corrente elétrica por meio do chaveamento das informações binárias. Custavam menos que tubos a vácuo,
+            geravam
+            menos calor, <strong>eram ligeiramente menores e tinham maior durabilidade</strong>; tinham também a
+            capacidade
+            de compreenderem linguagem de programação mais complexa, como a Fortran e a Cobol</p>
+
+        <h3>Terceira geração (1964-1974)</h3>
+
+        <p><strong>Introduziu nos computadores o uso de chips, ou circuitos integrados,</strong> que poderiam processar
+            informações simultâneas de diversos transistores. Como consequência, esses computadores <strong>eram muito
+                mais
+                rápidos e baratos</strong>, e foram distribuídos em empresas de menor proporção.</p>
+
+        <h3>Quarta geração (1974-1989)</h3>
+
+        <p>Nessa fase, o computador <strong>funcionava por meio de microprocessadores</strong> que suportavam milhares
+            de
+            transistores. Tal período permitiu o desenvolvimento de modelos compactos e <strong><u>introduziu os
+                    microcomputadores</u> de uso doméstico.</strong> Devido às múltiplas opções de programação, houve a
+            criação dos primeiros jogos eletrônicos comercializáveis e o avanço da internet.</p>
+
+        <h3>Quinta geração (1989-presente)</h3>
+
+        <p>A atual geração de computadores foi <strong>marcada pela introdução do ULSI</strong>, tecnologia que permitia
+            a
+            inserção de milhões de transistores por chip. As múltiplas funções simultâneas permitiram o uso de modelos
+            mais
+            rápidos e de aquecimento consideravelmente menor. Essa fase <strong>significou o boom do consumo de
+                microcomputadores</strong>, aumentando as vendas de seu mercado para 60 milhões de unidades em 1995.</p>
+
+        <h2 id="clients">O que são <i>Clients</i>?</h2> <a href="#inicio"><small>(voltar)</small></a>
+
+        <p>É o cliente quem <mark>sempre inicia a comunicação com o servidor</mark>. O cliente mais conhecido é o
+            navegador.
+            Quando acessamos um site pelo navegador, uma requisição é disparada pela internet para o computador no qual
+            esse
+            site está hospedado.</p>
+        <p>Chamamos as aplicações que agem em nome do usuário, assim como o navegador, de user-agent. Após enviar uma
+            requisição, o user-agent aguarda até que haja uma resposta do servidor e então a comunicação se encerra.</p>
+
+        <h2 id="servers">O que são <i>Servers</i>?</h2> <a href="#inicio"><small>(voltar)</small></a>
+
+        <p>O papel do servidor web é receber uma requisição e devolver uma resposta para o cliente. Geralmente o
+            servidor
+            não envia dados se o cliente não disparar primeiro uma requisição. O servidor é um ou mais computadores com
+            um
+            único endereço. Nestes computadores podem ser hospedados documentos, imagens, áudio, vídeo, etc.</p>
+        <p>Geralmente o servidor também hospeda programas que atendem as requisições dos clientes e as processam.
+            Chamamos
+            esses programas de web server, ou servidor web. É com um web server que nos comunicamos, sendo o computador
+            no
+            qual ele está instalado parte da infraestrutura que o conecta a internet. O web server geralmente é capaz de
+            executar aplicações escritas em linguagens como PHP, C#, Java, etc.</p>
+
+        <h2 id="estrutura">Como é uma estrutura básica de um HTML?</h2> <a href="#inicio"><small>(voltar)</small></a>
+
+        <p>Antes de falarmos sobre a estrutura básica do HTML, vamos entender o que é o HTML e como ele funciona</p>
+        <p>O <abbr title="HyperText Markup Language">HTML</abbr> é uma linguagem de marcação de HiperTexto utilizada
+            para estruturar um documento ou página para a web. Ou seja, ao visualizar uma página na internet, você verá
+            a renderização de um código criado em HTML em conjunto com outras linguagens.</p>
+        <p>Um documento HTML nada mais é que um documento contendo a extensão .html ou .htm. A partir deste documento, o
+            navegador faz a leitura do arquivo e renderiza o seu conteúdo para que o usuário final possa visualizá-lo.
+            Portanto, os arquivos .html ou .htm podem ser visualizados em qualquer navegador (como Google Chrome, Opera,
+            Safari, Mozilla Firefox, etc).</p>
+        <p>Geralmente um site é composto por diversas páginas HTML, como por exemplo: um website que contenha três
+            páginas (uma homepage, uma página de contato e uma página de produtos) receberá ao menos três documentos
+            .html distintos, sendo um para cada página do website.</p>
+
+        <h3>Estrutura básica de um documento HTML</h3>
+
+        <p>A estrutura básica de um documento HTML é realizada da seguinte forma:</p>
+
+        < !DOCTYPE html> <br>
+        < html> <br><br>
+
+        < head> <br>
+        < meta charset="UTF-8"> <br>
+        < title> titulo da pagina< /title> <br>
+        < /head> <br><br>
+
+        < body> <br><br>
+
+        < /body> <br><br>
+
+        < /html> <br>
+
+        <p>A partir desse código, podemos desenvolver toda a nossa página, estruturando como precisarmos. Mas primeiro,
+            é bom compreender o que está sendo feito até o momento:</p>
+
+        <ul>
+            <li>DOCTYPE html — A declaração do doctype informa ao navegador que
+                está sendo utilizado a linguagem HTML . Hoje em dia, o doctype
+                basicamente é necessário apenas para garantir que o documento se
+                comporte corretamente.</li>
+            <li> html — O elemento html envolve todo o conteúdo da página HTML.
+            </li>
+            <li>head - O elemento head é o local no qual você irá incluir todos os elementos que deseja incluir na
+                página mas que não deve ser renderizado. Dentre eles, podemos utilizar os metadados, o título, as tags
+                link para adicionar folhas de estilos, entre outras.</li>
+            <li>meta charset=”utf-8″ — Esse elemento de metadados serve para definir o conjunto de caracteres que seu
+                documento deve usar para o utf-8.</li>
+            <li>title — O elemento title serve para definir o título de sua página. Portanto, é aqui que se define o
+                título que é mostrado na guia do navegador.</li>
+            <li>body — Finalmente, neste elemento, ficarão todos os elementos que serão renderizados pelo navegador, ou
+                seja, todo o corpo da sua página HTML.</li>
+        </ul>
+
+        <h2 id="listas">Entendendo a diferença entre listas ordenadas e não ordenadas</h2> <a
+            href="#inicio"><small>(voltar)</small></a>
+
+        <p>As listas não ordenadas, também conhecidas como listas com marcadores, são usadas quando a ordem dos itens
+            não é importante. Elas são comumente usadas para listar itens de forma geral, como uma lista de ingredientes
+            em uma receita, uma lista de recursos em um produto ou uma lista de tarefas.</p>
+        <p>Já as listas ordenadas, também conhecidas como listas numeradas, são usadas quando a ordem dos itens é
+            importante. Elas são úteis em uma variedade de situações, como criar uma lista de instruções passo a passo,
+            uma lista de classificação ou qualquer lista onde a ordem dos itens é significativa. </p>
+
+        <p>Veja a seguir um exemplo utilizando os dois tipos de lista: </p>
+
+        <h3>Receita de Focaccia</h3>
+
+        <p>ingredientes:</p>
+
+        <ul>
+            <li>10g fermento biológico</li>
+            <li>1 colher de sopa açúcar</li>
+            <li>1 colher de sobremesa sal</li>
+            <li>2 colheres margarina</li>
+            <li>1 copo (200 ml) leite</li>
+            <li>1 copo (100 ml) <del>H<sub>2</sub>O</del> água</li>
+            <li>600g farinha de trigo</li>
+            <li>1 calabresa</li>
+            <li>1 cebola</li>
+            <li>200g muçarela em cubo</li>
+            <li>200g de presunto em cubo</li>
+            <li>50g azeitona</li>
+            <li>Azeite a gosto</li>
+        </ul>
+
+        <p>modo de preparo: </p>
+
+        <ol>
+            <li>Na bacia coloca os ingredientes seco, e aos poucos vai adicionando a água e o leite (morno)</li>
+            <li>Mistura bem até desgrudar das mãos e ficar linsinha.</li>
+            <li>Deixe descansar por 40 min. Ou até dobrar de tamanho.</li>
+            <li>Abra a massa, coloque no tabuleiro, recheie, deixa descansar mais 30 minutos.</li>
+            <li>Regue azeite e asse em forno médio por 30 minutos.</li>
+        </ol>
+
+        <blockquote><strong>Observação:</strong> A Focaccia é um pão de origem italiana (Gênova), achatado e bem macio e
+            suave - Receita disponível no site da <a href="https://cookpad.com/br/receitas/24825239"
+                target="_blank">Cookpad</a>
+        </blockquote>
+        <h2 id="referencias">Links de referências</h2> <a href="#inicio"><small>(voltar)</small></a>
+
+        <ul>
+            <li><a href="https://www.dio.me/" target="_blank">DIO</a></li>
+            <li><a href="https://brasilescola.uol.com.br/informatica/evolucao-dos-computadores.htm"
+                    target="_blank">Brasil Escola</a></li>
+            <li><a href="https://www.devmedia.com.br/http-cliente-e-servidor/41215" target="_blank">Dev Media</a></li>
+            <li><a href="https://www.homehost.com.br/blog/tutoriais/html-basico/#top01" target="_blank">Home Host</a>
+            </li>
+            <li><a href="https://plataforma.refatorando.com.br/cursos/html5-basico-gratuito/conteudo/elementos-html/topicos/listas-ordenadas-nao-ordenadas-e-de-definicao/"
+                    target="_blank">Refatorando</a>
+            </li>
+        </ul>
+    </font>
+</body>
+
+</html>
